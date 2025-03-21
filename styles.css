@@ -1,15 +1,40 @@
 body{
     background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
 }
 
 h1{
+    font-family: 'Lucida Sans';
+    padding: 0;
+    width: 100%;
+    height: 40px;
     text-align: center;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.Imagen{
+    border-radius: 100%;
+    margin: 10px auto;
+    width: 200px;
 }
 
 div{
+    margin: auto;
+    padding: 0 20px;
     border-color: black;
     border-width: 2px;
     border-style: solid;
+}
+
+a{
+    text-decoration: none;
+}
+
+form{
+    margin:auto;
 }
