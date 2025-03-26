@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Personalizado";
+    src: url(../Fuentes/Comic_Neue\,Winky_Sans/Comic_Neue) format("typetrue");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Personalizado";
+    src: url(../Fuentes/Comic_Neue\,Winky_Sans/Winky_Sans) format("typetrue");
+    font-weight: 600;
+    font-style: normal;
+}

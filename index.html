@@ -2,52 +2,51 @@
 <html>
 <head>
     <title>Trabajo Práctico 1</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/fonts.css">
 </head>
 <body>
-
-    <h1>Primer Trabajo Práctico Desarrollo de Software</h1>
-
-    <img class="Imagen" src="https://sanfrancisco.utn.edu.ar/imagenes/noticias/fotografias/gf-2054-656264.jpg" alt="UTN San Francisco" title="UTN San Francisco">
+    <header>
+        <nav>
+            <a class="encabezado" href="contacto.html">Formulario de Contacto</a>
+            <a class="encabezado" href="conocimientos.html">Conocimientos</a>
+            <a class="encabezado" href="proyectos.html">Proyectos</a>
+        </nav>
+    </header>
     
-    <div>
-        <h2>Estudiante de Ingeniería en Sistemas de Información</h2>   
-        <p>Hola soy un estudiante de la <a href="https://sanfrancisco.utn.edu.ar/">UTN San Francisco</a>, y estoy cursando el tercer año de la carrera de Ingeniería en Sistemas de Información.</p>
+    <div class="informacion">
+        <section class="nombre_foto">
+            <img class="imagen" src="Imágenes/Illojuan_elegante.png" alt="Juan Alberto García Gámez" title="Ing. en Sistemas de Información">
+            <h2>Juan Alberto García Gámez </h2>
+        </section>
+        <section class="infor_personal"> 
+            <h2>Ingeniero en Sistemas de Información</h2>
+            <p>Soy un apasionado de la tecnología y la innovación, especializado en el desarrollo de software, gestión de bases de datos y optimización de sistemas, siempre buscando soluciones eficientes y escalables. Me encanta enfrentar desafíos tecnológicos y trabajar en equipo para crear herramientas que mejoren la experiencia del usuario y optimicen procesos dentro de las organizaciones.
+            </p>
+            <p>Cuento, a su vez, con experiencia en la integración de hardware y software, redes y seguridad informática, lo que me permite comprender por completo de un sistema de información. Siempre estoy en constante aprendizaje, explorando nuevas tecnologías y metodologías para mantenerme actualizado.
+            </p>
+            <p>
+            Me considero una persona analítica, creativa y comprometida, con habilidades para la resolución de problemas y la toma de decisiones estratégicas. Mi objetivo es aportar soluciones innovadoras que marquen la diferencia en el mundo de la tecnología.
+            </p>
+        </section>
     </div>
 
-    <hgroup>
-        <h3>Habilidades/Herramientas que manejo</h3>
-        <ul>
-            <li class="Hab_Herr">Programación: Python, C/C++, java </li>
-            <li class="Hab_Herr">Desarrollo Web: HTML, CSS, JavaScript</li>
-            <li class="Hab_Herr">Bases de Datos: SQL</li>
-        </ul>
-    </hgroup>
-
-    <hgroup>
-        <h3>Experiencia y proyectos</h3>
-        <ol>
-            <li class="Exp_Proy">Desarrollador backend, responsable de crear la lógica y las bases de datos detrás de las aplicaciones web o móviles (Python, Java, SQL).</li>
-            <li class="Exp_Proy">Desarrollador full stack, participando en la creación de aplicaciones web, desde interfaz de usuario a lógica del servidor.</li>
-        </ol>
-    </hgroup>
-
-    <form>
-        <h4>Formulario de Contacto</h4>
-        <input type="text" placeholder="Ingrese su nombre" required>
-        <input type="email" placeholder="Ingrese su correo electrónico" required>
-        <input type="tel" placeholder="Ingrese su número de teléfono">
-        <input type="text" placeholder="Compartí tus dudas" required>
-        <input type="submit" value="Enviar">
-    </form>
-
     <footer>
-        <h4>Mis Redes</h4>
-        <nav>
-            <a class="pie_de_pagina" href="https://www.linkedin.com/feed/" target="_blank">Linkedin</a>
-            <a class="pie_de_pagina" href="https://github.com/" target="_blank">GitHub</a>
-            <a class="pie_de_pagina" href="https://www.instagram.com/" target="_blank">Instagram</a>
-        </nav>
+            <section class="redes">
+                <h4>Mis Redes</h4>
+                <a class="pie_de_pagina" href="https://www.linkedin.com/feed/" target="_blank">
+                    <img class="imagenes_redes"  src="Imágenes/linkedin-in-brands.svg" alt="LinkedIn">
+                </a>
+                <a class="pie_de_pagina" href="https://github.com/" target="_blank">
+                    <img class="imagenes_redes"  src="Imágenes/github-brands.svg" alt="GitHub">
+                </a>
+                <a class="pie_de_pagina" href="https://www.instagram.com/" target="_blank">
+                    <img class="imagenes_redes"  src="Imágenes/instagram-brands.svg" alt="Instagram">
+                </a>
+                <a class="pie_de_pagina" href="https://www.facebook.com/" target="_blank">
+                    <img class="imagenes_redes" src="Imágenes/facebook-f-brands.svg" alt="facebook">
+                </a>
+            </section>
     </footer>
 </body>
 </html>
