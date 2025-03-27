@@ -102,19 +102,19 @@ h1 {
     font-family: Externa;
     font-weight: 600;
     padding: 5px;
-    text-decoration: underline;
     font-style: italic;
     width: 97%;
-    font-size: 22px;
+    font-size: 70px;
     text-align: center;
     margin: 15px 0;
+    text-transform: uppercase;
 }
 
 .imagen {
     object-fit: cover;
     object-position: center;
-    width: 220px;
-    height: 220px;
+    width: 300px;
+    height: 300px;
     margin: 10px auto;
     border-radius: 50%;
     border: 5px solid #3a5f6f;
@@ -129,24 +129,23 @@ h1 {
 .informacion {
     width: 90%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: row;
     align-items: center;
     justify-content: space-around;
     margin: auto;
-    gap: 20px;
 }
 
 .infor_personal {
     max-width: 60%;
     margin: 20px;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 1.6;
     color: #333;
 }
 
 .nombre_foto {
     text-align: center;
-    margin: 20px;
+    margin: 10px;
 }
 
 
@@ -181,15 +180,16 @@ h3 {
     font-family: Externa;
     font-weight: 600;
     text-align: center;
-    font-size: 32px;
+    font-size: 40px;
     color: #3a5f6f;
     margin-bottom: 20px;
 }
 
 h4 {
     font-family: Externa;
+    width: 100%;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 28px;
     color: #3a5f6f;
     margin-bottom: 15px;
     text-align: center;
@@ -204,7 +204,6 @@ ul {
 }
 
 .Hab_Herr {
-    font-size: 18px;
     color: #444;
     padding: 20px;
     margin: 15px;
@@ -251,7 +250,7 @@ hgroup {
     display: flex;
     flex-direction: column;
     flex: 1 1 300px;
-    max-width: 30%;
+    max-width: 25%;
     border: 2px solid #3a5f6f;
     padding: 20px;
     border-radius: 10px;
@@ -268,14 +267,15 @@ hgroup {
 
 .empresas {
     margin: 20px;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     font-weight: bold;
     color: #3a5f6f;
 }
 
 .proyecto {
-    font-size: 16px;
+    padding: 15px;
+    font-size: 22px;
     color: #333;
     line-height: 1.5;
 }
@@ -304,6 +304,7 @@ form {
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 15px;
 }
 
 .formulario_titulo {
@@ -337,11 +338,6 @@ form {
     background-color: #12122b;
 }
 
-h4 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 10px;
-}
 
 h5{
     font-family: Externa;
