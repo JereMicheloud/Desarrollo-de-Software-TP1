@@ -13,17 +13,18 @@
             <a class="encabezado" href="proyectos.html">Proyectos</a>
         </nav>
     </header>
-    <form> 
-        <h2 class="formulario_titulo">Formulario de Contacto</h4>
-        <input class="form_input" type="text" placeholder="Ingrese su nombre" required>
-        <input class="form_input" type="email" placeholder="Ingrese su correo electrónico" required>
-        <input class="form_input" type="tel" placeholder="Ingrese su número de teléfono">
-        <input class="form_input dudas" type="text" placeholder="Compartí tus dudas" required>
+    <form id="Formulario"> 
+        <h3 class="formulario_titulo">Formulario de Contacto</h3>
+        <input class="form_input nombre" type="text" id="Nombre" placeholder="Ingrese su nombre" required>
+        <input class="form_input nombre" type="text" id="Apellido" placeholder="Ingrese su apellido" required>
+        <input class="form_input" type="email" id="Email" placeholder="Ingrese su correo electrónico" required>
+        <input class="form_input" type="tel" id="Telefono" placeholder="Ingrese su número de teléfono">
+        <input class="form_input dudas" type="text" id="Duda" placeholder="Compartí tus dudas" required>
         <input class="form_input form_button" type="submit" value="Enviar">
     </form>
     <footer>
         <section class="redes">
-            <h4>Mis Redes</h4>
+            <h4 class="titulo_redes">Mis Redes</h4>
             <a class="pie_de_pagina" href="https://www.linkedin.com/feed/" target="_blank">
                 <img class="imagenes_redes"  src="Imágenes/linkedin-in-brands.svg" alt="LinkedIn">
             </a>
@@ -38,5 +39,43 @@
             </a>
         </section>
 </footer>
+
+<script>
+    const url = 'https://script.google.com/macros/s/AKfycbxNeMdKEdYmy60h19yQMROtitFEsQxzTveHPpyLlsZiDgB_brbEEXprOUxxTYHVrURl/exec';
+
+    document.getElementById('formulario').addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const datos = {
+            nombre: document.getElementById('nombre').value,
+            apellido: document.getElementById('apellido').value,
+            email: document.getElementById('email').value,
+            telefono: document.getElementById('telefono').value || 'No proporcionado',
+            mensaje: document.getElementById('mensaje').value
+        };
+
+        try {
+            const respuesta = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(datos)
+            });
+
+            if (respuesta.ok) {
+                alert('✅ Datos enviados correctamente');
+                document.getElementById('formulario').reset();
+            } else {
+                const mensajeError = await respuesta.text();
+                alert('❌ Error al enviar los datos: ' + mensajeError);
+            }
+        } catch (error) {
+            console.error('❌ Error:', error);
+            alert('❌ Error en la conexión: ' + error.message);
+        }
+    });
+</script>
+
 </body>
 </html>

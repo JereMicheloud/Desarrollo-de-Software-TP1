@@ -1,13 +1,17 @@
 @font-face {
-    font-family: "Personalizado";
-    src: url(../Fuentes/Comic_Neue\,Winky_Sans/Comic_Neue) format("typetrue");
+    font-family: "Externa";
+    src: url(../Fuentes/Comic_Neue/ComicNeue-Light.ttf ) format("truetype");
     font-weight: 200;
-    font-style: normal;
 }
 
 @font-face {
-    font-family: "Personalizado";
-    src: url(../Fuentes/Comic_Neue\,Winky_Sans/Winky_Sans) format("typetrue");
+    font-family: "Externa";
+    src: url(../Fuentes/Comic_Neue/ComicNeue-Regular.ttf ) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Externa";
+    src: url(../Fuentes/Comic_Neue/ComicNeue-Bold.ttf ) format("truetype");
     font-weight: 600;
-    font-style: normal;
 }
